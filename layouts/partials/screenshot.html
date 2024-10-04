@@ -1,0 +1,4 @@
+{{ $image := .Params.image | relURL }}
+<a href="{{ $image }}">
+    <img src="{{ $image }}" alt="Screenshot of {{ .Params.games }} taken on {{ .Params.dates }}" class="screenshot"/>
+</a>

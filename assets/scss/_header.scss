@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 16px;
+
+  @include breakpoint('small') {
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+  }
+
+  a.header-logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+
+  img {
+    height: 16px;
+    margin-right: 8px;
+  }
+}
+
+nav {
+  background-color: var(--highlight-color);
+  color: var(--base-color);
+  padding: 10px;
+  margin: -10px;
+}
+
+.menu-item {
+  a {
+    color: var(--base-color);
+  }
+}

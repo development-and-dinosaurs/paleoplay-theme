@@ -1,0 +1,12 @@
+{{ define "main" }}
+  {{ .Content }}
+  {{- $pages := .Site.RegularPages }}
+  {{- $sorted := $pages.Reverse }}
+  {{ range first 3 $sorted }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ partial "screenshot.html" . }}
+  {{ end }}
+  <p>
+    <a class="view-more" href={{ relref . "posts" }}>See More Posts</a>
+  </p>
+{{ end }}

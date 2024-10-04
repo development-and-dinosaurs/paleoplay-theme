@@ -1,0 +1,16 @@
+name = 'Paleoplay'
+license = 'MIT'
+licenselink = 'https://github.com/development-and-dinosaurs/paleoplay-theme/blob/main/LICENSE'
+description = 'Theme description'
+
+# The home page of the theme, where the source can be found
+homepage = 'https://github.com/owner/repo'
+
+demosite = 'https://sean.otoole.me.uk/gamelog'
+
+# Taxonomy terms
+tags = ['blog', 'gamelog']
+
+[author]
+  name = 'Tyrannoseanus'
+  homepage = 'https://www.developmentanddinosaurs.co.uk'

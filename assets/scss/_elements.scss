@@ -1,0 +1,47 @@
+html,
+body {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--base-color);
+    font-family: var(--font-family-paragraph);
+    color: var(--text-color);
+    margin: 0;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+a {
+    color: var(--highlight-color);
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+h1,
+h2,
+h3 {
+    color: var(--heading-color);
+    font-family: var(--heading-font-family);
+}
+
+p {
+    color: var(--text-color);
+    font-family: var(--font-family-paragraph);
+    font-size: var(--font-size);
+    line-height: 24px;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        list-style: none;
+    }
+}
