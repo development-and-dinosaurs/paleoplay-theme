@@ -1,5 +1,6 @@
 {{ define "main" }}
   <h1>{{ .Title }}<span class="dot">.</span></h1>
   {{ partial "screenshot.html" . }}
+  {{ partial "terms.html" (dict "taxonomy" "games" "page" .) }}
   {{ partial "terms.html" (dict "taxonomy" "genres" "page" .) }}
 {{ end }}
