@@ -1,4 +1,9 @@
 {{ $image := .Params.image | relURL }}
-<a href="{{ $image }}">
-    <img src="{{ $image }}" alt="Screenshot of {{ .Params.games }} taken on {{ .Params.dates }}" class="screenshot"/>
+{{ $game := .Params.games }}
+{{ $date := .Params.dates }}
+
+{{- range .Params.images }}
+<a href="{{ . | relURL }}">
+    <img src="{{ . | relURL }}" alt="Screenshot of {{ $game }} taken on {{ $date }}" class="screenshot"/>
 </a>
+{{end}}
