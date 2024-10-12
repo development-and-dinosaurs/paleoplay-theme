@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <h1>{{ .Title }}<span class="dot">.</span></h1>
+  {{ partial "terms.html" (dict "taxonomy" "genres" "page" (index (.Pages) 0)) }}
+  {{ $paginator := .Paginate .Pages }}
+  {{ range $paginator.Pages }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ .Content }}
+    {{ partial "screenshot.html" . }}
+  {{ end }}
+  {{ template "_internal/pagination.html" . }}
+{{ end }}
