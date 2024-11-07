@@ -4,7 +4,7 @@
   {{ $paginator := .Paginate .Pages.Reverse }}
   {{ range $paginator.Pages }}
     <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
+    {{ partial "screenshot.html" . }}
   {{ end }}
   {{ template "_internal/pagination.html" . }}
 {{ end }}
